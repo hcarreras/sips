@@ -19,4 +19,7 @@ Then open `index.html`
 - npm
 - webpack
 
+## Contributing
 
+New features are discussed in issues. If you want to work on a missing feature, please, inform it in issue so everyone knows that you are working on that.
+  
