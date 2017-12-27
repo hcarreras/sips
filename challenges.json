@@ -1,14 +1,11 @@
 {
   "challenges": [
-    "Send 1 sip",
-    "Send 2 sips",
     "Send 3 sips",
-    "Send 4 sips",
     "Send 5 sips",
     "You drink",
-    "You drink twice",
     "You drink thrice",
-    "You drink 4 times",
-    "Everyone drinks"
+    "Everyone drinks",
+    "You and the player on your left must improvise an energy drink commercial. The rest judges. The loser drinks twice.",
+    "Say the most complicated word you know in your native language. Everyone else repeats. If anyone mispronounces, they drink twice."
   ]
 }
