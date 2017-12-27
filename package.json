@@ -1,0 +1,15 @@
+{
+  "name": "party-game",
+  "version": "1.0.0",
+  "description": "Challenges for parties",
+  "main": "index.js",
+  "repository": "git@github.com:hcarreras/party-game.git",
+  "author": "hcarreras <haricarreras@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "build": "webpack"
+  }
+}
