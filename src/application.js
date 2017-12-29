@@ -7,7 +7,9 @@ let currentLevel = 0
 const challenges = data["challenges"]
 let challengesUncompleted
 let challengesCompleted
+const mainContainer = document.getElementById("main")
 const challengeContainer = document.getElementById("challenge-container")
+const levelContainer = document.getElementById("level-container")
 
 const getUncompletedChallenge = (challengesUncompleted, challengesCompleted) => {
   const index = randomIndex(challengesUncompleted)
@@ -24,7 +26,7 @@ const nextChallenge = () => {
   const secondaryColor =  hexToComplimentary(mainColor)
 
   challengeContainer.textContent = getUncompletedChallenge(challengesUncompleted, challengesCompleted)
-  setContainerColors(challengeContainer, mainColor, secondaryColor)
+  setContainerColors(mainContainer, mainColor, secondaryColor)
   mayLevelUp()
 }
 
@@ -32,6 +34,8 @@ const nextLevel = () => {
   currentLevel += 1
   challengesUncompleted = challenges[currentLevel].slice(0)
   challengesCompleted = []
+  levelContainer.textContent = "Level: " + levels[currentLevel]
+
 }
 
 const mayLevelUp = () => {
@@ -39,7 +43,7 @@ const mayLevelUp = () => {
     nextLevel()
 }
 
-challengeContainer.addEventListener("click", nextChallenge);
+mainContainer.addEventListener("click", nextChallenge);
 
 nextLevel()
 nextChallenge()
