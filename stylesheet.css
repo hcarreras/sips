@@ -1,0 +1,53 @@
+.main-container {
+  font-family: Verdana, sans-serif;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+}
+
+.level-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px;
+}
+
+.challenge.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  font-size: 24px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /*whatever width you want*/
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  background: none;
+  background-color: #0086B8;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  padding: 8px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 16px;
+}

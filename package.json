@@ -7,6 +7,9 @@
   "author": "hcarreras <haricarreras@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "create-react-class": "^15.6.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "webpack": "^3.10.0"
   },
   "scripts": {
