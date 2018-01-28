@@ -2,7 +2,6 @@ import Challenge from './Challenge'
 import createReactClass from 'create-react-class';
 import data from '../challenges.json'
 import LevelIndicator from './LevelIndicator'
-import Menu from './Menu'
 import React from 'react';
 
 const h = React.createElement
@@ -66,7 +65,6 @@ const Home = createReactClass({
     const challenge = level && challenges[currentLevel][challengesCompleted]
     return (
       h('div', {className: 'main-container', onClick: level && this.nextChallenge, style: {backgroundColor: color}},
-        h(Menu, {}),
         h(LevelIndicator, {level}),
         h(Challenge, {challenge, restart: this.restart})));
   }

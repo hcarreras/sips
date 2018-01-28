@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Home from './Home'
+import Menu from './Menu'
 
 const h = React.createElement
 
-ReactDOM.render(h(Home, {}), document.getElementById('root'));
+ReactDOM.render(h(Menu, {}), document.getElementById('root'));

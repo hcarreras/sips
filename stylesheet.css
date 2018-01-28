@@ -1,3 +1,4 @@
+body,
 .main-container {
   font-family: Verdana, sans-serif;
   color: white;
@@ -7,7 +8,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: blue;
+  background-color: #00E2CC;
+  transition: 100ms;
 }
 
 .level-indicator {
@@ -17,7 +19,7 @@
   padding: 16px;
 }
 
-.challenge.outer {
+.outer {
   display: table;
   position: absolute;
   height: 100%;
@@ -43,11 +45,33 @@ button {
   background: none;
   background-color: #0086B8;
   border-radius: 3px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
   padding: 8px;
   border: none;
   font-size: 24px;
   cursor: pointer;
   margin-top: 16px;
+  transition: 100ms;
+}
+
+button:hover,
+button:focus  {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+input {
+  margin: 8px auto;
+  padding: 8px;
+  display: block;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: 100ms;
+}
+
+input:hover,
+input:focus {
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.4);
+  outline: none;
 }
