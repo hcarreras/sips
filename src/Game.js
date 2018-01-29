@@ -36,7 +36,7 @@ const Home = createReactClass({
   },
 
   insertPlayerNames: function (challenge) {
-    const players = R.values(this.props.players)
+    const players = this.props.players.slice()
     let challengeString = challenge
     const maxNumberOfPlayerNames = 5 // I guess it wont work if there aren't 5 players signed up. What should we do about that?
     for (let i=0; i<maxNumberOfPlayerNames; i++) {
@@ -69,7 +69,6 @@ const Home = createReactClass({
   },
 
   openMenu: function (event) {
-    console.log('hejhej');
     this.props.openMenu()
     event.stopPropagation()
   },

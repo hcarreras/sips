@@ -12,6 +12,10 @@ body,
   transition: 100ms;
 }
 
+.hidden .main-container {
+  display: none;
+}
+
 .level-indicator {
   position: absolute;
   top: 0;
@@ -61,7 +65,8 @@ button:focus  {
 }
 
 input {
-  margin: 8px auto;
+  width: 100%;
+  margin: 8px 0;
   padding: 8px;
   display: block;
   border: none;
@@ -98,4 +103,36 @@ input:focus {
   margin-bottom: 5px;
   background-color: white;
   border-radius: 2.5px;
+}
+
+.input-container {
+  width: 200px;
+  margin: 8px auto;
+  display: block;
+}
+
+.name-field {
+  position: relative;
+}
+
+.remove-player-button {
+  position: absolute;
+  right: calc(-1 * (25px + 16px + 8px));
+  top: 10px;
+  cursor: pointer;
+}
+
+.remove-player-button div {
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  border-radius: 2.5px;
+}
+
+.remove-player-button div:nth-child(1) {
+  transform: rotate(45deg) translate(calc(25% - 2.5px));
+}
+
+.remove-player-button div:nth-child(2) {
+  transform: rotate(-45deg) translate(calc(25% - 2.5px));
 }
