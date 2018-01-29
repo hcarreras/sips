@@ -20,6 +20,12 @@ const Menu = createReactClass({
     })
   },
 
+  openMenu: function () {
+    this.setState({
+      menuIsOpen: true
+    })
+  },
+
   updatePlayers: function (index) {
     return function (event) {
       const value = event.target.value
@@ -65,6 +71,6 @@ const Menu = createReactClass({
                 }),
               h('button', {onClick: this.closeMenu}, 'start game')),
             !menuIsOpen && h('div', {},
-              h(Game, {players}))))))}})
+              h(Game, {players, openMenu: this.openMenu}))))))}})
 
 export default Menu;

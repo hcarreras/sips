@@ -68,6 +68,12 @@ const Home = createReactClass({
     })
   },
 
+  openMenu: function (event) {
+    console.log('hejhej');
+    this.props.openMenu()
+    event.stopPropagation()
+  },
+
   render: function () {
     const color = this.state.colors[Math.floor(Math.random() * this.state.colors.length)]
     const currentLevel = this.state.currentLevel
@@ -78,6 +84,10 @@ const Home = createReactClass({
     const challenge = level && this.insertPlayerNames(challenges[currentLevel][challengesCompleted])
     return (
       h('div', {className: 'main-container', onClick: level && this.nextChallenge, style: {backgroundColor: color}},
+        h('div', {onClick: this.openMenu, className: 'menu-button'},
+          h('div', {}),
+          h('div', {}),
+          h('div', {})),
         h(LevelIndicator, {level}),
         h(Challenge, {challenge, restart: this.restart})));
   }

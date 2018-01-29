@@ -82,3 +82,20 @@ input:focus {
   border-radius: 15px;
   margin-bottom: 16px;
 }
+
+.menu-button {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  padding: 16px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.menu-button div {
+  width: 25px;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  border-radius: 2.5px;
+}
