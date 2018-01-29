@@ -47,7 +47,7 @@ const Menu = createReactClass({
         h('div', {className: 'menu middle'},
           h('div', {className: 'menu inner'},
             menuIsOpen && h('div', {},
-              h('h1', {}, 'Welcome to SIPS!'),
+              h('img', {className: 'logo', src: './assets/logo-svg.svg'}),
                 playersArray.map(function (playerName, index) {
                   return (
                     h('input', {
