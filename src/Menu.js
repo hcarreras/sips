@@ -1,6 +1,6 @@
-import * as R from 'ramda';
-import React from 'react';
-import createReactClass from 'create-react-class';
+import * as R from 'ramda'
+import React from 'react'
+import createReactClass from 'create-react-class'
 import Game from './Game'
 
 const h = React.createElement
