@@ -21,5 +21,9 @@ Then open `index.html`
 
 ## Contributing
 
-New features are discussed in issues. If you want to work on a missing feature, please, inform it in issue so everyone knows that you are working on that.
+New features are discussed in issues. If you want to work on a missing feature, please, inform it in the issue so everyone knows that you are working on that.
   
+## Deployment
+
+Sips is hosted at [surge.sh](https://surge.sh). Automatic deployments are hooked to Github. So, don't sweat it. Just relax, push to origin, and magic will happen.
+You can play now at http://sips.surge.sh
