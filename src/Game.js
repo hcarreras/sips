@@ -10,7 +10,6 @@ const Home = createReactClass({
 
   getInitialState: function () {
     return {
-      challengesPerLevel: 5,
       levels: {
         '1': 'Sober',
         '2': 'Tipsy',
@@ -34,6 +33,10 @@ const Home = createReactClass({
     };
   },
 
+  getChallengesPerLevel: function () {
+    return this.props.players.length * 2
+  },
+
   insertPlayerNames: function (challenge) {
     const players = this.props.players.slice()
     let challengeString = challenge
@@ -47,12 +50,12 @@ const Home = createReactClass({
   },
 
   nextChallenge: function (previousChallenge) {
-    const challengesCompleted = this.state.challengesCompleted
+    const challengesCompleted = this.state.challengesCompleted + 1
 
     const challenges = this.state.challenges
     challenges[this.state.currentLevel] = challenges[this.state.currentLevel].filter(challenge => challenge !== previousChallenge)
-
-    if (challengesCompleted === this.state.challengesPerLevel) {
+    
+    if (challengesCompleted === this.getChallengesPerLevel()) {
       this.setState({
         currentLevel: this.state.currentLevel + 1,
         challengesCompleted: 0,
@@ -60,7 +63,7 @@ const Home = createReactClass({
       })
     } else {
       this.setState({
-        challengesCompleted: challengesCompleted + 1,
+        challengesCompleted: challengesCompleted,
         challenges: challenges
       })
     }
