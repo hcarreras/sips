@@ -34,7 +34,8 @@ const Home = createReactClass({
   },
 
   getChallengesPerLevel: function () {
-    return this.props.players.length * 2
+    //return this.props.players.length * 2
+    return 10
   },
 
   insertPlayerNames: function (challenge) {
