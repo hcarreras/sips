@@ -49,22 +49,27 @@ const Home = createReactClass({
     return challengeString
   },
 
-  nextChallenge: function (previousChallenge) {
-    const challengesCompleted = this.state.challengesCompleted + 1
-
+  getUnusedChallenges(previousChallenge){
     const challenges = this.state.challenges
     challenges[this.state.currentLevel] = challenges[this.state.currentLevel].filter(challenge => challenge !== previousChallenge)
-    
+
+    return challenges
+  },
+
+  nextChallenge: function (previousChallenge) {
+    const challengesCompleted = this.state.challengesCompleted + 1
+    const unUsedChallenges = this.getUnusedChallenges(previousChallenge)
+
     if (challengesCompleted === this.getChallengesPerLevel()) {
       this.setState({
         currentLevel: this.state.currentLevel + 1,
         challengesCompleted: 0,
-        challenges: challenges
+        challenges: unUsedChallenges
       })
     } else {
       this.setState({
         challengesCompleted: challengesCompleted,
-        challenges: challenges
+        challenges: unUsedChallenges
       })
     }
   },
