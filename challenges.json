@@ -1,6 +1,6 @@
 {
   "challenges": {
-    "1":[
+    "1": [
       "Send 5 sips",
       "You drink",
       "You drink thrice",
@@ -20,7 +20,7 @@
       "Theater time! #{player_1} is a flight assitance. #{player_2} is drunk and wants to party. #{player_1} must make #{player_2} behave since there are turbulences and #{player_3} is scared.",
       "#{player_1} tell us a joke."
     ],
-    "2":[
+    "2": [
       "Send 3 sips",
       "#{player_1} and #{player_2} against #{player_3} and #{player_4} must improvise an energy drink commercial. The rest judges. The loser drinks twice.",
       "#{player_1} and #{player_2}. Who can do the best split? Loser drinks.",
@@ -37,7 +37,7 @@
       "#{player_1} say a verb to #{player_2}. The rest have to guess in less than 1 minute. If they guess, #{player_1} and #{player_2} drink. Otherwise, they drink.",
       "#{player_1} do a headstand. If you fall, drink."
     ],
-    "3":[
+    "3": [
       "#{player_1} and #{player_2}. Who can do the most push ups? Loser drinks.",
       "#{player_1} gets on #{player_2}'s shoulders in less than 10 seconds from NOW.",
       "#{player_1} hug #{player_2} and #{player_3}.",
@@ -52,8 +52,9 @@
       "#{player_1} exchange one piece of clothe with #{player_2}",
       "#{player_1} say 'She sells seashells by the seashore' 3 times. If you mispronounce, you and #{player_2} drink."
     ],
-    "4":[
-      "Theater time! #{player_1} gives a present to her grandma #{player_2} thinking that it's a mixer. She mixed up the presents and it's actually a dildo.""#{player_1} and #{player_2} who has taken the biggest dick?.",
+    "4": [
+      "Theater time! #{player_1} gives a present to her grandma #{player_2} thinking that it's a mixer. She mixed up the presents and it's actually a dildo.",
+      "#{player_1} and #{player_2} who has taken the biggest dick?.",
       "#{player_1} kiss #{player_2}.",
       "#{player_1} remove a piece of clothe from #{player_2}.",
       "#{player_1} tell about your most embarrasing porn search.",
@@ -65,7 +66,6 @@
       "#{player_1} and #{player_2} have to do the helicopter.",
       "#{player_1} slap #{player_2}'s ass. #{player_3} slap #{player_2}'s ass.",
       "#{player_1} disclose how many people sexual partners you had or drink."
-
     ]
   }
 }
