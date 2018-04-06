@@ -1,7 +1,6 @@
 {
   "challenges": {
     "1":[
-      "Send 3 sips",
       "Send 5 sips",
       "You drink",
       "You drink thrice",
@@ -18,9 +17,11 @@
       "#{player_1} bring a glass of water for #{player_2}. #{player_2} thank him and drink it.",
       "#{player_1} compliment #{player_2}.",
       "#{player_1} tell us about the last nightmare you remember.",
+      "Theater time! #{player_1} is a flight assitance. #{player_2} is drunk and wants to party. #{player_1} must make #{player_2} behave since there are turbulences and #{player_3} is scared.",
       "#{player_1} tell us a joke."
     ],
     "2":[
+      "Send 3 sips",
       "#{player_1} and #{player_2} against #{player_3} and #{player_4} must improvise an energy drink commercial. The rest judges. The loser drinks twice.",
       "#{player_1} and #{player_2}. Who can do the best split? Loser drinks.",
       "#{player_1} and #{player_2} who has the darker underware.",
@@ -29,11 +30,11 @@
       "Everyone, put your palms together behind your back, fingers up. If you can't, drink.",
       "#{player_1} tell your most embarrasing situation.",
       "#{player_1} hold eye contact with #{player_2} for 30 seconds.",
-      "Theater time! #{player_1} gives a present to her grandma #{player_2} thinking that it's a mixer. She mixed up the presents and it's actually a dildo.",
+      "Theater time! #{player_1} is a celebrity. #{player_2} wants an autograph from him/her but wants to look cool.",
       "#{player_1} close your eyes. #{player_2} choose someone to say 'oink'. #{player_1} guess who was it.",
       "#{player_1} has a weird disease. #{player_2} is the doctor. Can he guess what's wrong with #{player_1}? Share your illness before starting.",
-      "#{player_1} say 'She sells seashells by the seashore'. If you mispronounce, you and #{player_2} drink.",
       "#{player_1} and #{player_2} confess your biggest fear.",
+      "#{player_1} say a verb to #{player_2}. The rest have to guess in less than 1 minute. If they guess, #{player_1} and #{player_2} drink. Otherwise, they drink.",
       "#{player_1} do a headstand. If you fall, drink."
     ],
     "3":[
@@ -48,10 +49,11 @@
       "#{player_1} has to hold #{player_2} hand until the end of the turn.",
       "#{player_1} say 2 truths and a lie. #{player_2} guess the lie.",
       "Drink if you ever farted on purpose in front of strangers.",
-      "#{player_1} exchange one piece of clothe with #{player_2}"
+      "#{player_1} exchange one piece of clothe with #{player_2}",
+      "#{player_1} say 'She sells seashells by the seashore' 3 times. If you mispronounce, you and #{player_2} drink.",
     ],
     "4":[
-      "#{player_1} and #{player_2} who has taken the biggest dick?.",
+      "Theater time! #{player_1} gives a present to her grandma #{player_2} thinking that it's a mixer. She mixed up the presents and it's actually a dildo.""#{player_1} and #{player_2} who has taken the biggest dick?.",
       "#{player_1} kiss #{player_2}.",
       "#{player_1} remove a piece of clothe from #{player_2}.",
       "#{player_1} tell about your most embarrasing porn search.",
