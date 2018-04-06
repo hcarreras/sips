@@ -3,13 +3,16 @@ body,
   font-family: Verdana, sans-serif;
   color: white;
   font-weight: bold;
-  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: #00E2CC;
   transition: 100ms;
+}
+
+.main-container {
+  position: fixed;
 }
 
 .hidden .main-container {
