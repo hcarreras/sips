@@ -1,30 +1,32 @@
 {
   "challenges": {
     "1": [
-      "Send 5 sips",
-      "You drink",
-      "You drink thrice",
+      "#{player_1} send 5 sips",
+      "#{player_1}, #{player_2} and #{player_3} drink",
+      "#{player_1} drink thrice",
       "Everyone drinks",
       "#{player_1} says the most complicated word you know in your native language. Everyone else repeats. If anyone mispronounces, they drink twice.",
-      "#{player_1} sing a song with #{player_2} or drink.",
       "#{player_1} must answer no to any question he is asked and must explain why not. If he doesn't, he drinks.",
       "You can only drink with your left hand.",
-      "#{player_1} and #{player_2} who has the hardest abs. #{player_3} judges.",
       "#{player_1} guess who is the youngest in the room. If you are right, that person drinks, otherwise you drink.",
       "No one can speak in their native language.",
       "#{player_1} and #{player_2}. Who can do the deeper slavic squat for 10 seconds? Loser drinks.",
       "#{player_1} ask a capital to #{player_2}. If he doesn't know, he drinks. Do it the other way around.",
       "#{player_1} bring a glass of water for #{player_2}. #{player_2} thank him and drink it.",
-      "#{player_1} compliment #{player_2}.",
       "#{player_1} tell us about the last nightmare you remember.",
       "Theater time! #{player_1} is a flight assitance. #{player_2} is drunk and wants to party. #{player_1} must make #{player_2} behave since there are turbulences and #{player_3} is scared.",
-      "#{player_1} tell us a joke."
+      "#{player_1} get a coin and throw it to a glass 2m away. Continue until you fail. #{player_2} drinks a sip for each time you get it in.",
+      "#{player_1} spell {player_2}'s name. Drink for each time you misspell",
+      "In turns, every player must say a story. #{player_1} will guess if it's true or false. Drink for each wrong answer.",
+      "#{player_1} say the colors #{player_2}'s country flag. Drink if you fail.",
+      "#{player_1} finish your glass and turn it around for 3 seconds. If a single drop falls, repeat again."
     ],
     "2": [
-      "Send 3 sips",
+      "#{player_1} send 3 sips",
+      "#{player_1} compliment #{player_2}.",
       "#{player_1} and #{player_2} against #{player_3} and #{player_4} must improvise an energy drink commercial. The rest judges. The loser drinks twice.",
+      "#{player_1} sing a song with #{player_2} or drink.",
       "#{player_1} and #{player_2}. Who can do the best split? Loser drinks.",
-      "#{player_1} and #{player_2} who has the darker underware.",
       "#{player_1} speak with Italian accent until the end of the turn.",
       "#{player_1} and #{player_2} do armwrestling. Winner drinks.",
       "Everyone, put your palms together behind your back, fingers up. If you can't, drink.",
@@ -35,9 +37,13 @@
       "#{player_1} has a weird disease. #{player_2} is the doctor. Can he guess what's wrong with #{player_1}? Share your illness before starting.",
       "#{player_1} and #{player_2} confess your biggest fear.",
       "#{player_1} say a verb to #{player_2}. The rest have to guess in less than 1 minute. If they guess, #{player_1} and #{player_2} drink. Otherwise, they drink.",
-      "#{player_1} do a headstand. If you fall, drink."
+      "#{player_1} do a headstand. If you fall, drink.",
+      "#{player_1} cheer before drinking. If you forget, you drink again. This rule will be in effect unti the end of the level.",
+      "#{player_1} make a toast.",
+      "Every votes who is the drunkest person. Everyone drinks except him/her."
     ],
     "3": [
+      "#{player_1} and #{player_2} who has the darker underware. Lighter drinks.",
       "#{player_1} and #{player_2}. Who can do the most push ups? Loser drinks.",
       "#{player_1} gets on #{player_2}'s shoulders in less than 10 seconds from NOW.",
       "#{player_1} hug #{player_2} and #{player_3}.",
@@ -50,14 +56,19 @@
       "#{player_1} say 2 truths and a lie. #{player_2} guess the lie.",
       "Drink if you ever farted on purpose in front of strangers.",
       "#{player_1} exchange one piece of clothe with #{player_2}",
-      "#{player_1} say 'She sells seashells by the seashore' 3 times. If you mispronounce, you and #{player_2} drink."
+      "#{player_1} say 'She sells seashells by the seashore' 3 times. If you mispronounce, you and #{player_2} drink.",
+      "#{player_1} create a rule. It will be present until the end of the level",
+      "Until the end of the level, #{player_1} and #{player_2} must keep physical contact.",
+      "#{player_1} and #{player_2} who has the hardest abs. #{player_3} judges.",
+      "In turns, every player must ask a secret question to the player on the left which he'll answer out loud. Anyone can drink a shot to get the question disclosed."
+
     ],
     "4": [
       "Theater time! #{player_1} gives a present to her grandma #{player_2} thinking that it's a mixer. She mixed up the presents and it's actually a dildo.",
       "#{player_1} and #{player_2} who has taken the biggest dick?.",
       "#{player_1} kiss #{player_2}.",
       "#{player_1} remove a piece of clothe from #{player_2}.",
-      "#{player_1} tell about your most embarrasing porn search.",
+      "#{player_1} tell about your most embarrassing porn search.",
       "#{player_1} has to catch #{player_2} in less than 10 second. Loser drinks",
       "#{player_1} choose where #{player_2} has to take a shot off of#{player_3}",
       "#{player_1} imitate one player at the table. The others have to guess who is it.",
@@ -65,7 +76,8 @@
       "#{player_1} show us your favorite sexual position with #{player_2}.",
       "#{player_1} and #{player_2} have to do the helicopter.",
       "#{player_1} slap #{player_2}'s ass. #{player_3} slap #{player_2}'s ass.",
-      "#{player_1} disclose how many people sexual partners you had or drink."
+      "#{player_1} disclose how many people sexual partners you had or drink.",
+      "#{player_1} tell us a joke."
     ]
   }
 }
