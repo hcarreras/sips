@@ -2,6 +2,7 @@ import * as R from 'ramda'
 import React from 'react'
 import createReactClass from 'create-react-class'
 import Game from './Game'
+import { CLASSIC_EDITION, TOGA_EDITION } from './constants'
 
 const h = React.createElement
 
@@ -10,8 +11,14 @@ const Menu = createReactClass({
   getInitialState: function () {
     return {
       menuIsOpen: true,
-      players: []
+      players: [],
+      edition: CLASSIC_EDITION
     }
+  },
+
+  startGame: function (edition) {
+    this.setState({edition: edition})
+    this.closeMenu()
   },
 
   closeMenu: function () {
@@ -73,8 +80,9 @@ const Menu = createReactClass({
                     type: 'text',
                     onFocus: this.addPlayer
                   })),
-              h('button', {onClick: this.closeMenu}, 'start game')),
+              h('button', {onClick: () => this.startGame(CLASSIC_EDITION)}, 'The Classic'),
+              h('button', {onClick: () => this.startGame(TOGA_EDITION)}, 'Toga Edition')),
             h('div', {className: menuIsOpen ? 'hidden' : ''},
-              h(Game, {players: players, openMenu: this.openMenu}))))))}})
+              h(Game, {players: players, openMenu: this.openMenu, edition: this.state.edition}))))))}})
 
 export default Menu;

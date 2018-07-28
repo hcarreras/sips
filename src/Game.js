@@ -1,7 +1,10 @@
 import * as R from 'ramda';
 import Challenge from './Challenge'
 import createReactClass from 'create-react-class'
-import data from '../challenges.json'
+import classicData from '../challenges/classic.json'
+import togaData from '../challenges/toga.json'
+import { CLASSIC_EDITION, TOGA_EDITION } from './constants'
+
 import LevelIndicator from './LevelIndicator'
 import React from 'react';
 const h = React.createElement
@@ -19,7 +22,7 @@ const Home = createReactClass({
       },
       currentLevel: 1,
       challengesCompleted: 0,
-      challenges: JSON.parse(JSON.stringify(data['challenges'])),
+      challenges: this.getChallengesData(),
       colors: [
         '#0086B8',
         '#65C949',
@@ -32,6 +35,19 @@ const Home = createReactClass({
         '#00E2CC'
       ]
     };
+  },
+
+  componentDidUpdate: function (prevProps) {
+    if(prevProps.edition != this.props.edition){
+      this.setState(this.getInitialState())
+    }
+  },
+
+  getChallengesData: function() {
+    switch(this.props.edition) {
+      case CLASSIC_EDITION: return JSON.parse(JSON.stringify(classicData['challenges']))
+      case TOGA_EDITION: return JSON.parse(JSON.stringify(togaData['challenges']))
+    }
   },
 
   challengesInLevelLeft: function () {

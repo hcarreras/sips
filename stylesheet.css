@@ -58,7 +58,7 @@ button {
   border: none;
   font-size: 20px;
   cursor: pointer;
-  margin-top: 16px;
+  margin: 16px 5px;
   transition: 100ms;
 }
 
