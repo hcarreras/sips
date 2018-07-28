@@ -1,8 +1,8 @@
-# Party name
-A better name is welcome :)
+# Sips
 
-The game consist in a series of challenges to be performed during a party. It is a drinking game. 
-It is based in the mobile game Piccolo. 
+The challenging drinking that will change your parties.
+
+Play now at sips.surge.sh
 
 # Development
 
