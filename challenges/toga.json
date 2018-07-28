@@ -1,36 +1,60 @@
 {
   "challenges": {
     "1": [
-      "TOGA EDITION",
-      "TOGA EDITION 2",
-      "TOGA EDITION e",
-      "TOGA EDITION 4",
-      "TOGA EDITION 5",
-      "TOGA EDITION 6"
+      "Theater time! #{player_1} and #{player_2} are having dinner with #{player_3} and #{player_4}. The first couple explains to the second one how becoming vegan is working out, but the second couple are meat lovers.",
+      "#{player_1} who is Grigori Rasputin. If you don't know, drink. If you know, send a sip.",
+      "#{player_1} who is Dr. Hibbert. If you don't know, drink. If you know, send a sip.",
+      "#{player_1} what is Acrophobia. If you don't know, drink. If you know, send a sip.",
+      "#{player_1} who is Theresa May. If you don't know, drink. If you know, send a sip.",
+      "#{player_1} what is the capital of Madagascar. If you don't know, drink 2 sips. If you know, #{player_2},#{player_3} and #{player_4} drink one sip.",
+      "#{player_1} what is the capital of Macedonia. If you don't know, drink 2 sips. If you know, #{player_2},#{player_3} and #{player_4} drink one sip.",
+      "Drink one sip if you ever wore socks with sandals or flip flops.",
+      "Grab someone's foot. Drink if you've been grabbed. (Grabbed players cannot grab)",
+      "Drink if you've ever smoked weed.",
+      "Drink if you've studied Information Technology (IT)",
+      "#{player_1} and #{player_2} switch names until the end of the game. Any mistake costs 1 sip.",
+      "#{player_1} and #{player_2} finish your drink.",
+      "#{player_1} who has the nicest outfit? You and that player drink.",
+      "Using any phone (except for game related use) costs 1 sip. This rule will be valid until the end of the game.",
+      "Drink 1 sip if you've never kissed anyone of your same gender.",
+      "Everyone drinks one sip.",
+      "#{player_1} make a toast. Everyone must finish their drink.",
+      "Everyone must write down a sentence and place the paper or phone in the middle. By turns, every player will take one sentence and read it out loud. If they laugh or smile, they have to drink.",
+      "#{player_1} make a gesture. Everyone must make the same gesture when they talk to you. If they forget, they have to drink one sip.",
+      "#{player_1} say everyone's name. Drink for each time you fail."
     ],
     "2": [
-      "TOGA EDITION",
-      "TOGA EDITION 2",
-      "TOGA EDITION e",
-      "TOGA EDITION 4",
-      "TOGA EDITION 5",
-      "TOGA EDITION 6"
+      "Theater time! #{player_1} has killed her husband. #{player_2} is the fiscal and #{player_3} is the judge.",
+      "Theater time! #{player_1} disclouses to #{player_2} that he/she has accidentally killed his/her pet.",
+      "Names for male genitals. #{player_1} you start. The loser drinks 2 sips.",
+      "Blindfold #{player_1} and #{player_2} and set them apart. Without making any noise they have to find each other.",
+      "#{player_1} hug #{player_2} and #{player_3}.",
+      "#{player_1} speak with indian accent until the end of the turn.",
+      "#{player_1} and #{player_2} tell us a joke.",
+      "#{player_1} and #{player_2} paint #{player_3}'s nails.",
+      "Everyone claps 'We will rock you' rhythm. By turns every player must sing (describe) how the player in his/her right looks.",
+      "Memory game. Per turns, everyone must say all the named words and add a new one. #{player_1} you start. Loser drinks two sips..",
+      "#{player_1} make a sound. Per turns, everyone must repeat it. #{player_1} choose the worst sound. That player drinks one sip."
     ],
     "3": [
-      "TOGA EDITION",
-      "TOGA EDITION 2",
-      "TOGA EDITION e",
-      "TOGA EDITION 4",
-      "TOGA EDITION 5",
-      "TOGA EDITION 6"
+      "Theater time! #{player_1} and #{player_2} are in a car when #{player_1} farts.",
+      "Theater time! #{player_1} and #{player_2}: The wrong response to 'I'm pregnant''.",
+      "#{player_1} have you ever had sex in a public place?. If so, give away a sip. Otherwise, drink one sip.",
+      "#{player_1} what is the perfect music for sex?",
+      "#{player_1} imitate #{player_2}",
+      "#{player_1} and #{player_2} what was your biggest dating dissapointment?",
+      "Until the end of the level, #{player_1} and #{player_2} must keep physical contact.",
+      "#{player_1} and #{player_2} choose 2 team members each by turns. The 2 teams must stand in line in front of each other. Mark a line in the floor behind each team. If your team moves behind your line, drink.",
+      "#{player_1} and #{player_2} against #{player_3} and #{player_4}: human wheelbarrow race."
     ],
     "4": [
-      "TOGA EDITION",
-      "TOGA EDITION 2",
-      "TOGA EDITION e",
-      "TOGA EDITION 4",
-      "TOGA EDITION 5",
-      "TOGA EDITION 6"
+      "Theater time! #{player_1} and #{player_2} are speed dating and they like each other.",
+      "#{player_1}, #{player_2} and #{player_3} put lipstick on and kiss several times #{player_4} during 1 minute. The player who kisses the most wins. Losers drink one sip.",
+      "Describe how you like to be kissed",
+      "#{player_1} kiss #{player_2} neck or drink 2 sips.",
+      "#{player_1} slap #{player_2}'s ass. #{player_3} slap #{player_2}'s ass.",
+      "#{player_1} and #{player_2} who can do the best headstand?",
+      "Try to do the tallest pyramid."
     ],
     "5":[
       "Go to the sauna"
