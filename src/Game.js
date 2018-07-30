@@ -115,7 +115,7 @@ const Home = createReactClass({
     const displayChallenge = level && this.insertPlayerNames(challenge)
 
     return (
-      h('div', {className: 'main-container', onClick: () => level && this.nextChallenge(challenge), style: {backgroundColor: color}},
+      h('div', {className: 'main-container', onClick: () => level && this.nextChallenge(challenge), style: {backgroundColor: color, backgroundImage: 'none'}},
         h('div', {onClick: this.openMenu, className: 'menu-button'},
           h('div', {}),
           h('div', {}),
