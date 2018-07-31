@@ -283,7 +283,7 @@ input:focus {
 }
 
 .select-game {
-  margin-top: 70px;
+  margin-bottom: 30px;
 }
 
 .select-game button {
@@ -297,7 +297,6 @@ input:focus {
 .select-game-header {
   color: white;
   font-weight: bold;
-  margin-top: 70px;
 }
 
 b {
