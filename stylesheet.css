@@ -91,10 +91,53 @@ input:focus {
 }
 
 .logo {
-  width: 150px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  border-radius: 15px;
+  fill: #0086B8;
+  width: 250px;
+  margin: auto;
   margin-bottom: 16px;
+  animation-name: logoglow;
+  animation-duration: 70s;
+  animation-iteration-count: infinite;
+}
+
+.logo svg {
+  overflow: visible;
+}
+
+.logo path {
+  stroke: #fff;
+  stroke-width: 30px;
+  animation-name: logostrokeglow;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+@keyframes logoglow {
+    0%   {fill: #0086B8;}
+    10%   {fill: #65C949;}
+    20%   {fill: #FF402C;}
+    30%   {fill: #F2DA00;}
+    40%   {fill: #B820FF;}
+    50%   {fill: #FF9D00;}
+    60%   {fill: #00B2FF;}
+    70%   {fill: #E984EF;}
+    80%   {fill: #00E2CC;}
+    90%   {fill: #fff;}
+}
+
+@keyframes logostrokeglow {
+    0%   {stroke: #fff;}
+    10%   {stroke: #0086B8;}
+    20%   {stroke: #65C949;}
+    30%   {stroke: #FF402C;}
+    40%   {stroke: #F2DA00;}
+    50%   {stroke: #B820FF;}
+    60%   {stroke: #FF9D00;}
+    70%   {stroke: #00B2FF;}
+    80%   {stroke: #E984EF;}
+    90%   {stroke: #00E2CC;}
 }
 
 .menu-button {
