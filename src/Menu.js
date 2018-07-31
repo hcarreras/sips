@@ -11,7 +11,7 @@ const Menu = createReactClass({
   getInitialState: function () {
     return {
       menuIsOpen: true,
-      players: ['player 1', 'player 2', 'player 3', 'player 4'],
+      players: [],
       edition: CLASSIC_EDITION
     }
   },
@@ -85,7 +85,7 @@ const Menu = createReactClass({
                   type: 'text',
                   onFocus: this.addPlayer
                 })),
-            h('div', {className: 'select-game'},
+            h('div', {className: 'select-game', style: {display: players.length > 3 ? null : 'none'}},
               h('div', {className: 'select-game-header'}, 'Select game'),
               h('button', {onClick: () => this.startGame(CLASSIC_EDITION)}, 'The Classic'),
               h('button', {onClick: () => this.startGame(TOGA_EDITION)}, 'Toga Edition'))),
