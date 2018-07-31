@@ -10,7 +10,7 @@ const Challenge = createReactClass({
       h('div', {className: 'challenge outer'},
         h('div', {className: 'challenge middle'},
           h('div', {className: 'challenge inner'},
-            h('div', {}, challenge || 'Done!'),
+            h('div', {dangerouslySetInnerHTML: {__html: challenge || 'Done!'}}),
             !challenge && h('button', {onClick: this.props.restart}, 'restart')))));
   }
 })

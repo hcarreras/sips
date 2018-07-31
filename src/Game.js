@@ -60,7 +60,7 @@ const Home = createReactClass({
 
     for (let i=0; i< this.props.players.length; i++) {
       const playerPosition = Math.floor(Math.random() * players.length)
-      challengeString = challengeString.replace(new RegExp('#{player_' + (i + 1) + '}', 'g'), players[playerPosition])
+      challengeString = challengeString.replace(new RegExp('#{player_' + (i + 1) + '}', 'g'), '<b>' + players[playerPosition] + '</b>')
       players.splice(playerPosition, 1)
     }
     return challengeString

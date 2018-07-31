@@ -71,11 +71,19 @@ button {
   cursor: pointer;
   margin: 16px 5px;
   transition: 100ms;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+  animation-name: buttonglow;
+}
+
+button:nth-child(2) {
+  background-color: #FF9D00;
+  animation-direction: reverse;
 }
 
 button:hover,
 button:focus  {
-  background-color: #00baff;
+  opacity: 0.7;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -91,7 +99,7 @@ input {
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
   transition: 100ms;
   font-weight: bold;
-  color: #404040;
+  color: #0086B8;
 }
 
 input:hover,
@@ -110,46 +118,104 @@ input:focus {
   animation-name: logoglow;
   animation-duration: 70s;
   animation-iteration-count: infinite;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke: #E984EF;
+  stroke-width: 30px;
 }
 
 .logo svg {
   overflow: visible;
 }
 
-.logo path {
-  stroke: #fff;
-  stroke-width: 30px;
-  animation-name: logostrokeglow;
-  animation-duration: 90s;
-  animation-iteration-count: infinite;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-}
-
 @keyframes logoglow {
-    0%   {fill: #0086B8;}
-    10%   {fill: #65C949;}
-    20%   {fill: #FF402C;}
-    30%   {fill: #F2DA00;}
-    40%   {fill: #B820FF;}
-    50%   {fill: #FF9D00;}
-    60%   {fill: #00B2FF;}
-    70%   {fill: #E984EF;}
-    80%   {fill: #00E2CC;}
-    90%   {fill: #fff;}
+    0% {
+      fill: #0086B8;
+      stroke: #E984EF;
+    }
+
+    10% {
+      fill: #65C949;
+      stroke: #0086B8;
+    }
+
+    20% {
+      fill: #FF402C;
+      stroke: #65C949;
+    }
+
+    30% {
+      fill: #F2DA00;
+      stroke: #FF402C;
+    }
+
+    40% {
+      fill: #B820FF;
+      stroke: #F2DA00;
+    }
+
+    50% {
+      fill: #FF9D00;
+      stroke: #B820FF;
+    }
+
+    60% {
+      fill: #00B2FF;
+      stroke: #FF9D00;
+    }
+
+    70% {
+      fill: #E984EF;
+      stroke: #00B2FF;
+    }
+
+    80% {
+      fill: #00E2CC;
+      stroke: #fff;
+    }
+
+    90% {
+      fill: #fff;
+      stroke: #00E2CC;
+    }
 }
 
-@keyframes logostrokeglow {
-    0%   {stroke: #fff;}
-    10%   {stroke: #0086B8;}
-    20%   {stroke: #65C949;}
-    30%   {stroke: #FF402C;}
-    40%   {stroke: #F2DA00;}
-    50%   {stroke: #B820FF;}
-    60%   {stroke: #FF9D00;}
-    70%   {stroke: #00B2FF;}
-    80%   {stroke: #E984EF;}
-    90%   {stroke: #00E2CC;}
+@keyframes buttonglow {
+    0% {
+      background-color: #0086B8;
+    }
+
+    10% {
+      background-color: #65C949;
+    }
+
+    20% {
+      background-color: #FF402C;
+    }
+
+    30% {
+      background-color: #F2DA00;
+    }
+
+    40% {
+      background-color: #B820FF;
+    }
+
+    50% {
+      background-color: #FF9D00;
+    }
+
+    60% {
+      background-color: #00B2FF;
+    }
+
+    70% {
+      background-color: #E984EF;
+    }
+
+    80% {
+      background-color: #00E2CC;
+    }
 }
 
 .menu-button {
@@ -232,4 +298,14 @@ input:focus {
   color: white;
   font-weight: bold;
   margin-top: 70px;
+}
+
+b {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.challenge.inner {
+  line-height: 38px;
 }

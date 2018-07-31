@@ -6,13 +6,13 @@
       "#{player_1} drink thrice",
       "Everyone drinks",
       "#{player_1} says the most complicated word you know in your native language. Everyone else repeats. If anyone mispronounces, they drink twice.",
-      "#{player_1} must answer no to any question he is asked and must explain why not. If he doesn't, he drinks.",
+      "#{player_1} must answer no to any question she/he is asked and must explain why not. If she/he doesn't, she/he drinks.",
       "You can only drink with your left hand.",
       "#{player_1} guess who is the youngest in the room. If you are right, that person drinks, otherwise you drink.",
       "No one can speak in their native language.",
       "#{player_1} and #{player_2}. Who can do the deeper slavic squat for 10 seconds? Loser drinks.",
-      "#{player_1} ask a capital to #{player_2}. If he doesn't know, he drinks. Do it the other way around.",
-      "#{player_1} bring a glass of water for #{player_2}. #{player_2} thank him and drink it.",
+      "#{player_1} ask a capital to #{player_2}. If she/he doesn't know, she/he drinks. Do it the other way around.",
+      "#{player_1} bring a glass of water for #{player_2}. #{player_2} thank her/him and drink it.",
       "#{player_1} tell us about the last nightmare you remember.",
       "Theater time! #{player_1} is a flight assitance. #{player_2} is drunk and wants to party. #{player_1} must make #{player_2} behave since there are turbulences and #{player_3} is scared.",
       "#{player_1} get a coin and throw it to a glass 2m away. Continue until you fail. #{player_2} drinks a sip for each time you get it in.",
@@ -34,7 +34,7 @@
       "#{player_1} hold eye contact with #{player_2} for 30 seconds.",
       "Theater time! #{player_1} is a celebrity. #{player_2} wants an autograph from him/her but wants to look cool.",
       "#{player_1} close your eyes. #{player_2} choose someone to say 'oink'. #{player_1} guess who was it.",
-      "#{player_1} has a weird disease. #{player_2} is the doctor. Can he guess what's wrong with #{player_1}? Share your illness before starting.",
+      "#{player_1} has a weird disease. #{player_2} is the doctor. Can she/he guess what's wrong with #{player_1}? Share your illness before starting.",
       "#{player_1} and #{player_2} confess your biggest fear.",
       "#{player_1} say a verb to #{player_2}. The rest have to guess in less than 1 minute. If they guess, #{player_1} and #{player_2} drink. Otherwise, they drink.",
       "#{player_1} do a headstand. If you fall, drink.",
@@ -49,7 +49,7 @@
       "#{player_1} hug #{player_2} and #{player_3}.",
       "#{player_1} and #{player_2} tell us how much you love each other.",
       "#{player_1} do #{player_2}'s hair. #{player_2} wear it until the end of the level.",
-      "#{player_1} massage #{player_2} until he downs his drink.",
+      "#{player_1} massage #{player_2} until she/he downs his drink.",
       "#{player_1} and #{player_2}: robot dance.",
       "#{player_1}, #{player_2} and #{player_3} come up with a crazy story one sentence at a time. The first who can't continue, drinks.",
       "#{player_1} has to hold #{player_2} hand until the end of the turn.",
@@ -60,7 +60,7 @@
       "#{player_1} create a rule. It will be present until the end of the level",
       "Until the end of the level, #{player_1} and #{player_2} must keep physical contact.",
       "#{player_1} and #{player_2} who has the hardest abs. #{player_3} judges.",
-      "In turns, every player must ask a secret question to the player on the left which he'll answer out loud. Anyone can drink a shot to get the question disclosed."
+      "In turns, every player must ask a secret question to the player on the left which she/he'll answer out loud. Anyone can drink a shot to get the question disclosed."
 
     ],
     "4": [
