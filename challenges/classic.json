@@ -16,7 +16,7 @@
       "#{player_1} tell us about the last nightmare you remember.",
       "Theater time! #{player_1} is a flight assitance. #{player_2} is drunk and wants to party. #{player_1} must make #{player_2} behave since there are turbulences and #{player_3} is scared.",
       "#{player_1} get a coin and throw it to a glass 2m away. Continue until you fail. #{player_2} drinks a sip for each time you get it in.",
-      "#{player_1} spell {player_2}'s name. Drink for each time you misspell",
+      "#{player_1} spell #{player_2}'s name. Drink for each time you misspell",
       "In turns, every player must say a story. #{player_1} will guess if it's true or false. Drink for each wrong answer.",
       "#{player_1} say the colors #{player_2}'s country flag. Drink if you fail.",
       "#{player_1} finish your glass and turn it around for 3 seconds. If a single drop falls, repeat again."

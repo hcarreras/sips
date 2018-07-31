@@ -10,11 +10,16 @@ body,
   width: 100%;
   min-width: 100vw;
   background-image: url('./assets/background.svg');
+  background-color: #ff9d00;
   transition: 100ms;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+}
+
+div {
+  transition: 100ms;
 }
 
 .main-container {
@@ -70,10 +75,13 @@ button {
 
 button:hover,
 button:focus  {
+  background-color: #00baff;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 input {
+  box-sizing: border-box;
+  font-size: 1em;
   width: 100%;
   margin: 8px 0;
   padding: 8px;
@@ -82,10 +90,13 @@ input {
   border-radius: 3px;
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
   transition: 100ms;
+  font-weight: bold;
+  color: #404040;
 }
 
 input:hover,
 input:focus {
+  background-color: #f3f3f3;
   box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.4);
   outline: none;
 }
@@ -94,6 +105,7 @@ input:focus {
   fill: #0086B8;
   width: 250px;
   margin: auto;
+  margin-top: 16px;
   margin-bottom: 16px;
   animation-name: logoglow;
   animation-duration: 70s;
@@ -149,6 +161,13 @@ input:focus {
   z-index: 5;
 }
 
+.menu-button:hover,
+.menu-button:active,
+.menu-button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
 .menu-button div {
   width: 25px;
   height: 5px;
@@ -158,7 +177,7 @@ input:focus {
 }
 
 .input-container {
-  width: 200px;
+  width: 250px;
   margin: 8px auto;
   display: block;
 }
@@ -169,14 +188,22 @@ input:focus {
 
 .remove-player-button {
   position: absolute;
-  right: calc(-1 * (25px + 16px + 8px));
-  top: 10px;
+  right: -60px;
+  top: -5px;
   cursor: pointer;
+  padding: 20px;
+}
+
+.remove-player-button:hover,
+.remove-player-button:active,
+.remove-player-button:focus {
+  outline: none;
+  opacity: 0.6;
 }
 
 .remove-player-button div {
-  width: 25px;
-  height: 5px;
+  width: 40px;
+  height: 10px;
   background-color: white;
   border-radius: 2.5px;
 }
@@ -187,4 +214,22 @@ input:focus {
 
 .remove-player-button div:nth-child(2) {
   transform: rotate(-45deg) translate(calc(25% - 2.5px));
+}
+
+.select-game {
+  margin-top: 70px;
+}
+
+.select-game button {
+  display: block;
+  text-align: center;
+  width: 250px;
+  margin: 8px auto;
+  font-size: 1em;
+}
+
+.select-game-header {
+  color: white;
+  font-weight: bold;
+  margin-top: 70px;
 }
