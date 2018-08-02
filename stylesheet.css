@@ -130,6 +130,7 @@ input:focus {
 
 @keyframes logoglow {
     0% {
+      stroke-width: 30px;
       fill: #0086B8;
       stroke: #E984EF;
     }
@@ -140,6 +141,7 @@ input:focus {
     }
 
     20% {
+      stroke-width: 10px;
       fill: #FF402C;
       stroke: #65C949;
     }
@@ -155,6 +157,7 @@ input:focus {
     }
 
     50% {
+      stroke-width: 30px;
       fill: #FF9D00;
       stroke: #B820FF;
     }
@@ -165,6 +168,7 @@ input:focus {
     }
 
     70% {
+      stroke-width: 10px;
       fill: #E984EF;
       stroke: #00B2FF;
     }
