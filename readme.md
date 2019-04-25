@@ -1,6 +1,6 @@
 # Sips
 
-The challenging drinking that will change your parties.
+The challenging drinking game that will change your parties.
 
 Play now at sips.surge.sh
 
