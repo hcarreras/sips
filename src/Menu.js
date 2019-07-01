@@ -4,6 +4,7 @@ import createReactClass from 'create-react-class'
 import Game from './Game'
 import { CLASSIC_EDITION, TOGA_EDITION } from './constants'
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 const h = React.createElement
 
@@ -68,8 +69,8 @@ const Menu = createReactClass({
                   h('path', {d: 'M852.1,230.2c0-10.9-3.8-19.3-11.5-25.4s-21.2-12.3-40.5-18.8-35.1-12.8-47.4-18.8q-59.85-29.4-59.8-80.8c0-17.1,5-32.1,14.9-45.1s24-23.2,42.2-30.4S788.6,0,811.3,0c22.1,0,42,3.9,59.5,11.8S902,30.9,911.7,45.5s14.6,31.3,14.6,50h-74c0-12.5-3.8-22.3-11.5-29.2s-18.1-10.4-31.2-10.4c-13.3,0-23.7,2.9-31.4,8.8S766.7,78,766.7,87c0,7.9,4.2,15,12.7,21.5s23.3,13,44.6,19.9,38.8,14.2,52.4,22.1q49.95,28.8,49.9,79.3c0,26.9-10.1,48.1-30.4,63.4s-48.1,23-83.5,23q-37.35,0-67.8-13.4T698.9,266q-15.3-23.4-15.3-53.8H758c0,16.5,4.3,28.6,12.8,36.5s22.4,11.7,41.5,11.7c12.3,0,22-2.6,29.1-7.9S852.1,239.8,852.1,230.2Z'}))),
               h('div', {className: 'select-game', style: {display: players.length > 3 ? null : 'none'}},
                 h('div', {className: 'header'}, 'Select game'),
-                h('button', {onClick: () => this.startGame(CLASSIC_EDITION)}, 'The Classic'),
-                h('button', {onClick: () => this.startGame(TOGA_EDITION)}, 'Toga Edition')),
+                h(Button, { variant: 'contained', onClick: () => this.startGame(CLASSIC_EDITION)}, 'The Classic'),
+                h(Button, { variant: 'contained', onClick: () => this.startGame(TOGA_EDITION)}, 'Toga Edition')),
               h('div', {className: 'input-container'},
                 h('div', {className: 'header'}, 'Enter player names'),
                 players.map(function (playerName, index) {
