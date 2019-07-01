@@ -8,6 +8,7 @@ import { CLASSIC_EDITION, TOGA_EDITION } from './constants'
 import LevelIndicator from './LevelIndicator'
 import React from 'react';
 const h = React.createElement
+const MAX_CHALLENGES_PER_LEVEL = 20
 
 const Home = createReactClass({
 
@@ -104,7 +105,7 @@ const Home = createReactClass({
     const unUsedChallenges = this.getUnusedChallenges(challenge)
     const currentChallenge = this.insertPlayerNames(challenge)
 
-    if (this.challengesInLevelLeft().length == 0) {
+    if (this.challengesInLevelLeft().length == 0 || challengesCompleted === MAX_CHALLENGES_PER_LEVEL) {
       this.setState({
         currentLevel: this.state.currentLevel + 1,
         challengesCompleted: 0,
