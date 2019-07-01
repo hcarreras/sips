@@ -12,7 +12,6 @@ const Menu = createReactClass({
     return {
       menuIsOpen: true,
       players: [],
-      edition: CLASSIC_EDITION
     }
   },
 
@@ -53,8 +52,8 @@ const Menu = createReactClass({
   },
 
   render: function () {
-    const menuIsOpen = this.state.menuIsOpen
-    const players = this.state.players
+    const { menuIsOpen, players, edition } = this.state
+
     return (
       h('div', {className: 'menu outer'},
         h('div', {className: 'menu middle'},
@@ -91,6 +90,6 @@ const Menu = createReactClass({
                   onFocus: this.addPlayer
                 }))),
           h('div', {className: menuIsOpen ? 'hidden' : ''},
-            h(Game, {players: players, openMenu: this.openMenu, edition: this.state.edition}))))))}})
+            edition && h(Game, {players: players, openMenu: this.openMenu, edition: edition}))))))}})
 
 export default Menu;

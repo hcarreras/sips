@@ -34,13 +34,14 @@ const Home = createReactClass({
         '#00B2FF',
         '#E984EF',
         '#00E2CC'
-      ]
+      ],
+      players: [],
     };
   },
 
   componentDidUpdate: function (prevProps) {
     if(prevProps.edition != this.props.edition){
-      this.setState(this.getInitialState())
+      this.setState(this.getInitialState(), this.nextChallenge)
     }
   },
 
@@ -55,42 +56,66 @@ const Home = createReactClass({
     return this.state.challenges[this.state.currentLevel]
   },
 
+  getPlayer: function(playersInChallenge) {
+    let players
+
+    if(this.state.players.length <= playersInChallenge.length) {
+      players = this.props.players.slice().filter(p => !playersInChallenge.includes(p));
+      this.setState({players})
+    }else{
+      players = this.state.players.slice().filter(p => !playersInChallenge.includes(p));
+    }
+
+    const playerPosition = Math.floor(Math.random() * players.length)
+    const player = players[playerPosition]
+    players.splice(playerPosition, 1)
+    this.setState({players: players})
+
+    return player
+  },
+
   insertPlayerNames: function (challenge) {
-    const players = this.state.players.splice()
     let challengeString = challenge
+    let playersInChallenge = []
 
     for (let i=0; i< this.props.players.length; i++) {
-      const playerPosition = Math.floor(Math.random() * players.length)
-      challengeString = challengeString.replace(new RegExp('#{player_' + (i + 1) + '}', 'g'), '<b>' + players[playerPosition] + '</b>')
-      this.setState({players: players.splice(playerPosition, 1)})
-      if (this.state.players.length < 1) {
-        this.setState({players: this.props.players})
+      const playerHolder = '#{player_' + (i + 1) + '}'
+      if(challengeString.indexOf(playerHolder) !== -1){
+        const player = this.getPlayer(playersInChallenge)
+        challengeString = challengeString.replace(new RegExp(playerHolder, 'g'), '<b>' + player + '</b>')
+        playersInChallenge.push(player)
       }
     }
     return challengeString
   },
 
   getUnusedChallenges(previousChallenge){
-    const challenges = this.state.challenges
-    challenges[this.state.currentLevel] = challenges[this.state.currentLevel].filter(challenge => challenge !== previousChallenge)
+    const { challenges, currentLevel } = this.state
+    challenges[currentLevel] = challenges[currentLevel].filter(challenge => challenge !== previousChallenge)
 
     return challenges
   },
 
-  nextChallenge: function (previousChallenge) {
+  nextChallenge: function () {
+    const { levels, currentLevel } = this.state
+    const level = levels[currentLevel]
+    const challenge = level && this.getRandomChallenge()
     const challengesCompleted = this.state.challengesCompleted + 1
-    const unUsedChallenges = this.getUnusedChallenges(previousChallenge)
+    const unUsedChallenges = this.getUnusedChallenges(challenge)
+    const currentChallenge = this.insertPlayerNames(challenge)
 
     if (this.challengesInLevelLeft().length == 0) {
       this.setState({
         currentLevel: this.state.currentLevel + 1,
         challengesCompleted: 0,
-        challenges: unUsedChallenges
+        challenges: unUsedChallenges,
+        currentChallenge,
       })
     } else {
       this.setState({
         challengesCompleted: challengesCompleted,
-        challenges: unUsedChallenges
+        challenges: unUsedChallenges,
+        currentChallenge
       })
     }
   },
@@ -104,28 +129,28 @@ const Home = createReactClass({
     event.stopPropagation()
   },
 
-  getRandomChallenge: function(challenges, currentLevel){
+  getRandomChallenge: function(){
+    const {challenges, currentLevel} = this.state
+
     const randomIndex = Math.floor(Math.random() * challenges[currentLevel].length)
     return challenges[currentLevel][randomIndex]
   },
 
   render: function () {
-    const color = this.state.colors[Math.floor(Math.random() * this.state.colors.length)]
-    const currentLevel = this.state.currentLevel
-    const levels = this.state.levels
-    const challenges = this.state.challenges
+    const { edition } = this.props
+    const { currentChallenge, currentLevel, levels, colors } = this.state
+    const color = colors[Math.floor(Math.random() * colors.length)]
     const level = levels[currentLevel]
-    const challenge = level && this.getRandomChallenge(challenges, currentLevel)
-    const displayChallenge = level && this.insertPlayerNames(challenge)
+    if(edition && !currentChallenge) this.nextChallenge()
 
     return (
-      h('div', {className: 'main-container', onClick: () => level && this.nextChallenge(challenge), style: {backgroundColor: color, backgroundImage: 'none'}},
+      h('div', {className: 'main-container', onClick: () => level && this.nextChallenge(), style: {backgroundColor: color, backgroundImage: 'none'}},
         h('div', {onClick: this.openMenu, className: 'menu-button', tabIndex: '0'},
           h('div', {}),
           h('div', {}),
           h('div', {})),
         h(LevelIndicator, {level}),
-        h(Challenge, {challenge: displayChallenge, restart: this.restart})));
+        h(Challenge, {challenge: currentChallenge, restart: this.restart})));
   }
 })
 
