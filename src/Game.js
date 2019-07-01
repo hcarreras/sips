@@ -23,6 +23,7 @@ const Home = createReactClass({
       currentLevel: 1,
       challengesCompleted: 0,
       challenges: this.getChallengesData(),
+      players: this.props.players,
       colors: [
         '#0086B8',
         '#65C949',
@@ -55,13 +56,16 @@ const Home = createReactClass({
   },
 
   insertPlayerNames: function (challenge) {
-    const players = this.props.players.slice()
+    const players = this.state.players.splice()
     let challengeString = challenge
 
     for (let i=0; i< this.props.players.length; i++) {
       const playerPosition = Math.floor(Math.random() * players.length)
       challengeString = challengeString.replace(new RegExp('#{player_' + (i + 1) + '}', 'g'), '<b>' + players[playerPosition] + '</b>')
-      players.splice(playerPosition, 1)
+      this.setState({players: players.splice(playerPosition, 1)})
+      if (this.state.players.length < 1) {
+        this.setState({players: this.props.players})
+      }
     }
     return challengeString
   },
