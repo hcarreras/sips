@@ -164,12 +164,6 @@ div {
   border-radius: 2.5px;
 }
 
-.input-container {
-  width: 350px;
-  margin: 8px auto;
-  display: block;
-}
-
 .name-field {
   position: relative;
 }
