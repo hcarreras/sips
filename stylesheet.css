@@ -174,34 +174,12 @@ div {
   position: relative;
 }
 
-.remove-player-button {
-  position: absolute;
-  left: 260px;
-  top: 5px;
-  cursor: pointer;
-  padding: 20px;
+button.remove-player-button {
+  margin: 10px 0 0 8px;
 }
 
-.remove-player-button:hover,
-.remove-player-button:active,
-.remove-player-button:focus {
-  outline: none;
-  opacity: 0.6;
-}
-
-.remove-player-button div {
-  width: 40px;
-  height: 10px;
-  background-color: white;
-  border-radius: 2.5px;
-}
-
-.remove-player-button div:nth-child(1) {
-  transform: rotate(45deg) translate(calc(25% - 2.5px));
-}
-
-.remove-player-button div:nth-child(2) {
-  transform: rotate(-45deg) translate(calc(25% - 2.5px));
+button.add-player-button {
+  margin-top: 8px;
 }
 
 .select-game {
