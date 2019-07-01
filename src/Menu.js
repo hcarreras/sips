@@ -3,6 +3,7 @@ import React from 'react'
 import createReactClass from 'create-react-class'
 import Game from './Game'
 import { CLASSIC_EDITION, TOGA_EDITION } from './constants'
+import TextField from '@material-ui/core/TextField';
 
 const h = React.createElement
 
@@ -53,9 +54,9 @@ const Menu = createReactClass({
 
   render: function () {
     const { menuIsOpen, players, edition } = this.state
-
     return (
       h('div', {className: 'menu outer'},
+
         h('div', {className: 'menu middle'},
           h('div', {className: 'menu inner'},
             menuIsOpen && h('div', {},
@@ -74,19 +75,22 @@ const Menu = createReactClass({
                 players.map(function (playerName, index) {
                   return (
                     h('div', {key: index, className: 'name-field'},
-                      h('input', {
+                      h(TextField, {
+                        label: 'Player ' + (index + 1) + ' name',
+                        classes: { root: 'text-field' },
                         value: playerName,
-                        type: 'text',
+                        onChange: this.updatePlayers(index),
                         autoFocus: index + 1 === players.length,
-                        onChange: this.updatePlayers(index)
+                        variant: 'filled'
                       }),
-                      h('div', {className: 'remove-player-button', tabIndex: '0', onClick: this.removePlayer(index)},
+                      h('div', {className: 'remove-player-button', onClick: this.removePlayer(index)},
                         h('div', {}),
                         h('div', {}))))
                 }.bind(this)),
-                h('input', {
-                  placeholder: 'enter player name...',
-                  type: 'text',
+                h(TextField, {
+                  label: 'Player name',
+                  classes: { root: 'text-field' },
+                  variant: 'filled',
                   onFocus: this.addPlayer
                 }))),
           h('div', {className: menuIsOpen ? 'hidden' : ''},

@@ -87,28 +87,6 @@ button:focus  {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-input {
-  box-sizing: border-box;
-  font-size: 1em;
-  width: 100%;
-  margin: 8px 0;
-  padding: 8px;
-  display: block;
-  border: none;
-  border-radius: 3px;
-  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
-  transition: 100ms;
-  font-weight: bold;
-  color: #0086B8;
-}
-
-input:hover,
-input:focus {
-  background-color: #f3f3f3;
-  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.4);
-  outline: none;
-}
-
 .logo {
   fill: #0086B8;
   width: 250px;
@@ -247,7 +225,7 @@ input:focus {
 }
 
 .input-container {
-  width: 250px;
+  width: 350px;
   margin: 8px auto;
   display: block;
 }
@@ -258,8 +236,8 @@ input:focus {
 
 .remove-player-button {
   position: absolute;
-  right: -60px;
-  top: -5px;
+  left: 260px;
+  top: 5px;
   cursor: pointer;
   padding: 20px;
 }
@@ -311,4 +289,8 @@ b {
 
 .challenge.inner {
   line-height: 38px;
+}
+
+div.text-field {
+  margin-top: 8px;
 }
