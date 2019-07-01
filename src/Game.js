@@ -47,8 +47,8 @@ const Home = createReactClass({
 
   getChallengesData: function() {
     switch(this.props.edition) {
-      case CLASSIC_EDITION: return JSON.parse(JSON.stringify(classicData['challenges']))
-      case TOGA_EDITION: return JSON.parse(JSON.stringify(togaData['challenges']))
+      case CLASSIC_EDITION: return classicData['challenges']
+      case TOGA_EDITION: return R.mergeDeepWith(R.concat, togaData['challenges'], classicData['challenges'])
     }
   },
 
