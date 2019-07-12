@@ -1,13 +1,5 @@
-import * as R from 'ramda'
 import React from 'react'
 import createReactClass from 'create-react-class'
-import Game from './Game'
-import { CLASSIC_EDITION, TOGA_EDITION } from './constants'
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import DeleteIcon from '@material-ui/icons/Delete';
-import Add from '@material-ui/icons/AddCircle';
 
 const h = React.createElement
 

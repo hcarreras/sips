@@ -3,7 +3,8 @@ import Challenge from './Challenge'
 import createReactClass from 'create-react-class'
 import sharedData from '../challenges/shared.json'
 import togaData from '../challenges/toga.json'
-import { CLASSIC_EDITION, TOGA_EDITION } from './constants'
+import wellnessData from '../challenges/wellness.json'
+import { CLASSIC_EDITION, TOGA_EDITION, WELLNESS_EDITION } from './constants'
 
 import Background from './background'
 import LevelIndicator from './LevelIndicator'
@@ -50,6 +51,7 @@ const Home = createReactClass({
     switch(this.props.edition) {
       case CLASSIC_EDITION: return sharedData['challenges']
       case TOGA_EDITION: return R.mergeDeepWith(R.concat, togaData['challenges'], sharedData['challenges'])
+      case WELLNESS_EDITION: return R.mergeDeepWith(R.concat, wellnessData['challenges'], sharedData['challenges'])
     }
   },
 

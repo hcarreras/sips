@@ -1,0 +1,19 @@
+{
+  "challenges": {
+    "1": [
+      "#{player_1}, take a minute to appreciate yourself. Take 1 sip."
+    ],
+    "2": [
+      "#{player_1}, be present in the moment. Take 2 sips."
+    ],
+    "3": [
+      "#{player_1}, respect your peers. Take 3 sips."
+    ],
+    "4": [
+      "#{player_1}, overcome your limits. Take 4 sips."
+    ],
+    "5":[
+      "Go to the sauna, or jump in the nearest body of water. Otherwise finish your drink."
+    ]
+  }
+}
