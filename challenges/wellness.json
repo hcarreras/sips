@@ -5,7 +5,9 @@
       "#{player_1}, share with the group what makes you feel good. Also take 1 sip.",
       "#{player_1}, tell us about the last time you felt stressed. Be mindful of the warning signs. Take 1 sip.",
       "#{player_1}, you are amazing just the way you are! Take 1 sip.",
+      "If you have ever smoked weed, give out 1 sip you crazy bastard.",
       "#{player_1}, massage #{player_2}'s arm until the end of this level.",
+      "#{player_1}, make a sound of an animal. If #{player_2} can guess it, you drink 1 sip. Otherwise #{player_2} drinks 2 sips.",
       "If you're vegetarian give out 5 sips."
     ],
     "2": [
@@ -15,23 +17,30 @@
       "#{player_1}, massage #{player_2}'s shoulders until the end of this level.",
       "If you've ever been on a wellness retreat before give out 3 sips.",
       "#{player_1}, guide #{player_2} through a 1 minute meditation. If #{player_2} laughs, #{player_2} drinks 4 sips. #{player_3} time it!",
-      "Yoga time! #{player_1} touch your toes with both hands while having both legs stretched out in front of you. If you fail, drink 2 sips."
+      "Yoga time! #{player_1} touch your toes with both hands while having both legs stretched out in front of you. If you fail, drink 2 sips.",
+      "#{player_1} close your eyes. #{player_2} find something for #{player_1} to smell. If they get it right, you can give out 3 sips."
     ],
     "3": [
-      "if you have not been to South America, drink 2 sips",
+      "if you have been to South America you had your fun, the rest of you drink 2 sips",
       "#{player_1}, overcome your limits. Take 3 sips.",
       "If you're vegan, you now have another super power. You can give out 2 sips between every challenge.",
       "#{player_1}, respect your peers. Take 3 sips.",
+      "#{player_1} keep you eyes closed until the end of this level.",
       "If you have ever tried ayahuasca give out 3 sips.",
       "#{player_1} and #{player_2}, make your ugliest face. Whoever laughs drinks 2 sips.",
       "#{player_1}, speak with an Indian accent until the end of this level.",
       "#{player_1}, massage #{player_2}'s leg until the end of this level.",
+      "Everyone take a break. Go get some still water. Be back in 5 minutes.",
       "Yoga time! #{player_1} and #{player_2}, who can do the Tree pose the longest? #{player_3} is the judge. The winner can give out 3 sips."
     ],
     "4": [
       "Theater time! #{player_1} is on their first ayahuasca trip. #{player_2} is the shaman guiding them through the experience. #{player_1} is shocked to learn who their spirit animal is.",
       "#{player_1}, massage #{player_2}'s head until the end of this level.",
-      "Yoga time! #{player_1} and #{player_2}, who can do the Warrior I pose the longest? #{player_3} is the judge. The winner can give out 5 sips."
+      "#{player_1}, make the ugliest sound you can. Whomever laughs drink 2 sips.",
+      "Find a song that eveyone can sing along to. Sing that song!",
+      "Dance battle! #{player_1} and #{player_2} vs. #{player_3} and #{player_4}. Everyone else clap to the beat. Winning team can give out 5 sips.",
+      "Yoga time! #{player_1} and #{player_2}, who can do the Warrior I pose the longest? #{player_3} is the judge. The winner can give out 5 sips.",
+      "#{player_1}, close your eyes. #{player_2}, find a drink for #{player_1}. #{player_1} pinch your nose and take 1 sip of the drink. If you can guess what it is, you and #{player_2} can give out 2 sips."
     ],
     "5":[
       "Go to the sauna, or jump in the nearest body of water. Otherwise finish your drink."
