@@ -5,6 +5,7 @@ import sharedData from '../challenges/shared.json'
 import togaData from '../challenges/toga.json'
 import { CLASSIC_EDITION, TOGA_EDITION } from './constants'
 
+import Background from './background'
 import LevelIndicator from './LevelIndicator'
 import React from 'react';
 const h = React.createElement
@@ -145,6 +146,9 @@ const Home = createReactClass({
 
     return (
       h('div', {className: 'main-container', onClick: () => level && this.nextChallenge(), style: {backgroundColor: color, backgroundImage: 'none'}},
+        R.values(levels).map((level, index) => ((index + 1) === currentLevel) && index !== 0 && h('div', { className: 'next-level' },
+          h('h1', {}, 'Next level: ' + level + '!'),
+          h(Background, {}))),
         h('div', {onClick: this.openMenu, className: 'menu-button', tabIndex: '0'},
           h('div', {}),
           h('div', {}),
