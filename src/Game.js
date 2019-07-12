@@ -36,7 +36,6 @@ const Home = createReactClass({
         '#E984EF',
         '#00E2CC'
       ],
-      players: [],
     };
   },
 
