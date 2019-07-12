@@ -2,6 +2,7 @@ import * as R from 'ramda'
 import React from 'react'
 import createReactClass from 'create-react-class'
 import Game from './Game'
+import Background from './Background'
 import { CLASSIC_EDITION, TOGA_EDITION } from './constants'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
@@ -61,10 +62,10 @@ const Menu = createReactClass({
     const gameReady = (players.length > 3) && !players.filter(p => !p.length).length;
     return (
       h('div', {className: 'menu outer'},
-
+        h(Background, {}),
         h('div', {className: 'menu middle'},
           h('div', {className: 'menu inner'},
-            menuIsOpen && h('div', {},
+            h('div', { style: menuIsOpen ? {} : { opacity: 0, pointerEvents: 'none' } },
               h('div', {className: 'logo'},
                 h('svg',  {viewBox: '0 0 926.3 316.2'},
                   h('path', {d: 'M168.5,230.2c0-10.9-3.8-19.3-11.5-25.4s-21.2-12.3-40.5-18.8-35.1-12.8-47.4-18.8Q9.25,137.8,9.3,86.4c0-17.1,5-32.1,14.9-45.1s24-23.2,42.2-30.4S105,0,127.7,0c22.1,0,42,3.9,59.5,11.8s31.2,19.1,40.9,33.7,14.6,31.3,14.6,50h-74c0-12.5-3.8-22.3-11.5-29.2S139.1,55.9,126,55.9c-13.3,0-23.7,2.9-31.4,8.8S83.1,78,83.1,87c0,7.9,4.2,15,12.7,21.5s23.3,13,44.6,19.9,38.8,14.2,52.4,22.1q49.95,28.8,49.9,79.3c0,26.9-10.1,48.1-30.4,63.4s-48.1,23-83.5,23q-37.35,0-67.8-13.4Q30.7,289.45,15.3,266C5.1,250.5,0,232.5,0,212.2H74.4c0,16.5,4.3,28.6,12.8,36.5s22.4,11.8,41.6,11.8c12.3,0,22-2.6,29.1-7.9S168.5,239.8,168.5,230.2Z'}),
@@ -86,7 +87,7 @@ const Menu = createReactClass({
                         value: playerName,
                         onChange: this.updatePlayers(index),
                         autoFocus: (players.length === 4) ? index === 0  : index + 1 === players.length,
-                        variant: 'filled'
+                        variant: 'outlined'
                       }),
                       h(IconButton, {
                         classes: { root: 'remove-player-button' },

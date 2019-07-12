@@ -9,11 +9,8 @@ body,
   min-height: 100vh;
   width: 100%;
   min-width: 100vw;
-  background-image: url('./assets/background.svg');
-  background-color: #ff9d00;
   transition: 100ms;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgb(0, 134, 184);
   margin: 0;
   padding: 0;
 }
@@ -58,18 +55,15 @@ div {
 }
 
 .logo {
-  fill: #0086B8;
+  fill: #ff9d00;
   width: 250px;
   margin: auto;
   margin-top: 16px;
   margin-bottom: 16px;
   animation-name: logoglow;
-  animation-duration: 70s;
+  animation-duration: 40s;
+  animation-delay: 3s;
   animation-iteration-count: infinite;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-  stroke: #E984EF;
-  stroke-width: 30px;
 }
 
 .logo svg {
@@ -77,58 +71,32 @@ div {
 }
 
 @keyframes logoglow {
-    0% {
-      stroke-width: 30px;
-      fill: #0086B8;
-      stroke: #E984EF;
-    }
-
     10% {
-      fill: #65C949;
-      stroke: #0086B8;
+      fill: #00e2cc;
     }
 
     20% {
-      stroke-width: 10px;
-      fill: #FF402C;
-      stroke: #65C949;
-    }
-
-    30% {
-      fill: #F2DA00;
-      stroke: #FF402C;
+      fill: #e984ef;
     }
 
     40% {
-      fill: #B820FF;
-      stroke: #F2DA00;
+      fill: #ff9d00;
     }
 
     50% {
-      stroke-width: 30px;
-      fill: #FF9D00;
-      stroke: #B820FF;
+      fill: #b820ff;
     }
 
     60% {
-      fill: #00B2FF;
-      stroke: #FF9D00;
+      fill: #f2da00;
     }
 
     70% {
-      stroke-width: 10px;
-      fill: #E984EF;
-      stroke: #00B2FF;
+      fill: #ff402c;
     }
 
     80% {
-      fill: #00E2CC;
-      stroke: #fff;
-    }
-
-    90% {
-      fill: #fff;
-      stroke: #00E2CC;
+      fill: #65c949;
     }
 }
 
@@ -181,8 +149,11 @@ button.add-player-button {
 }
 
 .select-game-header {
-  color: white;
   font-weight: bold;
+}
+
+.header {
+  position: relative;
 }
 
 b {
@@ -197,4 +168,93 @@ b {
 
 div.text-field {
   margin-top: 8px;
+}
+
+.fancy-background {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+}
+
+.fancy-background polygon {
+  transform-origin: 0 60%;
+  transform: scale(0);
+  animation-duration: 600ms;
+  animation-name: star-expand;
+  animation-timing-function: cubic-bezier(1.000, 0, 0.990, 0.325);
+  animation-fill-mode: forwards;
+}
+
+.fancy-background polygon:nth-child(1) {
+  animation-delay: 150ms;
+}
+
+.fancy-background polygon:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+.fancy-background polygon:nth-child(3) {
+  animation-delay: 450ms;
+}
+
+.fancy-background polygon:nth-child(4) {
+  animation-delay: 600ms;
+}
+
+.fancy-background polygon:nth-child(5) {
+  animation-delay: 750ms;
+}
+
+.fancy-background polygon:nth-child(6) {
+  animation-delay: 900ms;
+}
+
+.fancy-background polygon:nth-child(7) {
+  animation-delay: 1050ms;
+}
+
+.fancy-background polygon:nth-child(8) {
+  animation-delay: 1200ms;
+}
+
+.fancy-background polygon:nth-child(9) {
+  animation-delay: 1350ms;
+}
+
+@keyframes star-expand {
+    0% {
+      transform: scale(0);
+    }
+
+    100% {
+      transform: scale(20);
+    }
+}
+
+.input-container {
+  opacity: 0;
+  animation-delay: 3s;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+}
+
+.logo svg {
+  opacity: 0;
+  animation-delay: 2.5s;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
 }
