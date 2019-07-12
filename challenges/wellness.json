@@ -1,16 +1,37 @@
 {
   "challenges": {
     "1": [
-      "#{player_1}, take a minute to appreciate yourself. Take 1 sip."
+      "#{player_1}, take a minute to appreciate yourself. Take 1 sip.",
+      "#{player_1}, share with the group what makes you feel good. Also take 1 sip.",
+      "#{player_1}, tell us about the last time you felt stressed. Be mindful of the warning signs. Take 1 sip.",
+      "#{player_1}, you are amazing just the way you are! Take 1 sip.",
+      "#{player_1}, massage #{player_2}'s arm until the end of this level.",
+      "If you're vegetarian give out 5 sips."
     ],
     "2": [
-      "#{player_1}, be present in the moment. Take 2 sips."
+      "#{player_1}, be present in the moment. Take 2 sips.",
+      "If you've been to south east asia, drink 1 sips.",
+      "If you've ever tried magic mushrooms give out 2 sips.",
+      "#{player_1}, massage #{player_2}'s shoulders until the end of this level.",
+      "If you've ever been on a wellness retreat before give out 3 sips.",
+      "#{player_1}, guide #{player_2} through a 1 minute meditation. If #{player_2} laughs, #{player_2} drinks 4 sips. #{player_3} time it!",
+      "Yoga time! #{player_1} touch your toes with both hands while having both legs stretched out in front of you. If you fail, drink 2 sips."
     ],
     "3": [
-      "#{player_1}, respect your peers. Take 3 sips."
+      "if you have not been to South America, drink 2 sips",
+      "#{player_1}, overcome your limits. Take 3 sips.",
+      "If you're vegan, you now have another super power. You can give out 2 sips between every challenge.",
+      "#{player_1}, respect your peers. Take 3 sips.",
+      "If you have ever tried ayahuasca give out 3 sips.",
+      "#{player_1} and #{player_2}, make your ugliest face. Whoever laughs drinks 2 sips.",
+      "#{player_1}, speak with an Indian accent until the end of this level.",
+      "#{player_1}, massage #{player_2}'s leg until the end of this level.",
+      "Yoga time! #{player_1} and #{player_2}, who can do the Tree pose the longest? #{player_3} is the judge. The winner can give out 3 sips."
     ],
     "4": [
-      "#{player_1}, overcome your limits. Take 4 sips."
+      "Theater time! #{player_1} is on their first ayahuasca trip. #{player_2} is the shaman guiding them through the experience. #{player_1} is shocked to learn who their spirit animal is.",
+      "#{player_1}, massage #{player_2}'s head until the end of this level.",
+      "Yoga time! #{player_1} and #{player_2}, who can do the Warrior I pose the longest? #{player_3} is the judge. The winner can give out 5 sips."
     ],
     "5":[
       "Go to the sauna, or jump in the nearest body of water. Otherwise finish your drink."
