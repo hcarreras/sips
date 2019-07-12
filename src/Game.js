@@ -146,7 +146,7 @@ const Home = createReactClass({
 
     return (
       h('div', {className: 'main-container', onClick: () => level && this.nextChallenge(), style: {backgroundColor: color, backgroundImage: 'none'}},
-        R.values(levels).map((level, index) => ((index + 1) === currentLevel) && index !== 0 && h('div', { className: 'next-level' },
+        R.values(levels).map((level, index) => ((index + 1) === currentLevel) && index !== 0 && h('div', { key: index, className: 'next-level', onClick: e => e.stopPropagation() },
           h('h1', {}, 'Next level: ' + level + '!'),
           h(Background, {}))),
         h('div', {onClick: this.openMenu, className: 'menu-button', tabIndex: '0'},
