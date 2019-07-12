@@ -1,14 +1,14 @@
 import * as R from 'ramda';
 import Challenge from './Challenge'
 import createReactClass from 'create-react-class'
-import classicData from '../challenges/classic.json'
+import sharedData from '../challenges/shared.json'
 import togaData from '../challenges/toga.json'
 import { CLASSIC_EDITION, TOGA_EDITION } from './constants'
 
 import LevelIndicator from './LevelIndicator'
 import React from 'react';
 const h = React.createElement
-const MAX_CHALLENGES_PER_LEVEL = 20
+const CHALLENGES_PER_LEVEL = 20
 
 const Home = createReactClass({
 
@@ -47,8 +47,8 @@ const Home = createReactClass({
 
   getChallengesData: function() {
     switch(this.props.edition) {
-      case CLASSIC_EDITION: return classicData['challenges']
-      case TOGA_EDITION: return R.mergeDeepWith(R.concat, togaData['challenges'], classicData['challenges'])
+      case CLASSIC_EDITION: return sharedData['challenges']
+      case TOGA_EDITION: return R.mergeDeepWith(R.concat, togaData['challenges'], sharedData['challenges'])
     }
   },
 
@@ -104,7 +104,7 @@ const Home = createReactClass({
     const unUsedChallenges = this.getUnusedChallenges(challenge)
     const currentChallenge = this.insertPlayerNames(challenge)
 
-    if (this.challengesInLevelLeft().length == 0 || challengesCompleted === MAX_CHALLENGES_PER_LEVEL) {
+    if (this.challengesInLevelLeft().length == 0 || challengesCompleted === CHALLENGES_PER_LEVEL) {
       this.setState({
         currentLevel: this.state.currentLevel + 1,
         challengesCompleted: 0,
