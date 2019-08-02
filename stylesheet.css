@@ -264,17 +264,12 @@ div.text-field {
 @keyframes fade-out {
     0% {
       opacity: 1;
-      top: 0;
-    }
-
-    99% {
-      opacity: 0;
-      top: 0;
+      pointer-events: all;
     }
 
     100% {
       opacity: 0;
-      top: 10000%;
+      pointer-events: none;
     }
 }
 
@@ -290,6 +285,7 @@ div.text-field {
   animation-duration: 200ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
+  pointer-events: none;
   animation-name: fade-out;
 }
 
