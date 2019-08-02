@@ -27,3 +27,7 @@ New features are discussed in issues. If you want to work on a missing feature, 
 
 Sips is hosted at [surge.sh](https://surge.sh). Automatic deployments are hooked to Github. So, don't sweat it. Just relax, push to origin, and magic will happen.
 You can play now at http://sips.surge.sh
+
+# Mobile app
+
+[Repo for React Native wrapper](https://github.com/IanAbildskou/SipsWrapper)
