@@ -264,12 +264,17 @@ div.text-field {
 @keyframes fade-out {
     0% {
       opacity: 1;
+      top: 0;
+    }
+
+    99% {
+      opacity: 0;
+      top: 0;
     }
 
     100% {
       opacity: 0;
-      display: none;
-      pointer-events: none;
+      top: 10000%;
     }
 }
 
