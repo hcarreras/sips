@@ -42,7 +42,7 @@ const Home = createReactClass({
 
   componentDidUpdate: function (prevProps) {
     if(prevProps.edition != this.props.edition){
-      this.setState(this.getInitialState(), this.nextChallenge)
+      this.setState(this.getInitialState(), this.next)
     }
   },
 
@@ -115,28 +115,27 @@ const Home = createReactClass({
     return challenges
   },
 
-  nextChallenge: function () {
+  next: function () {
     const { currentLevel } = this.state
-    const level = LEVELS[currentLevel]
-    const challenge = level && this.getRandomChallenge()
-    const challengesCompleted = this.state.challengesCompleted + 1
-    const unUsedChallenges = this.getUnusedChallenges(challenge)
-    const currentChallenge = this.insertPlayerNames(challenge)
+    let level, challenge, unUsedChallenges, currentChallenge, challengesCompleted
 
-    if (this.challengesInLevelLeft().length == 0 || challengesCompleted === CHALLENGES_PER_LEVEL) {
-      this.setState({
-        currentLevel: this.state.currentLevel + 1,
-        challengesCompleted: 0,
-        challenges: unUsedChallenges,
-        currentChallenge,
-      })
+    if (this.challengesInLevelLeft().length == 0 || this.state.challengesCompleted === CHALLENGES_PER_LEVEL) {
+      level = currentLevel + 1
+      challengesCompleted = 1
     } else {
-      this.setState({
-        challengesCompleted: challengesCompleted,
-        challenges: unUsedChallenges,
-        currentChallenge
-      })
+      level = currentLevel
+      challengesCompleted = this.state.challengesCompleted + 1
     }
+    challenge = this.getRandomChallenge(level)
+    unUsedChallenges = this.getUnusedChallenges(challenge)
+    currentChallenge = this.insertPlayerNames(challenge)
+
+    this.setState({
+      currentLevel: level,
+      challenges: unUsedChallenges,
+      challengesCompleted,
+      currentChallenge,
+    })
   },
 
   restart: function () {
@@ -148,11 +147,11 @@ const Home = createReactClass({
     event.stopPropagation()
   },
 
-  getRandomChallenge: function(){
-    const {challenges, currentLevel} = this.state
+  getRandomChallenge: function(level){
+    const {challenges} = this.state
 
-    const randomIndex = Math.floor(Math.random() * challenges[currentLevel].length)
-    return challenges[currentLevel][randomIndex]
+    const randomIndex = Math.floor(Math.random() * challenges[level].length)
+    return challenges[level][randomIndex]
   },
 
   render: function () {
@@ -160,10 +159,10 @@ const Home = createReactClass({
     const { currentChallenge, currentLevel, colors } = this.state
     const color = colors[Math.floor(Math.random() * colors.length)]
     const level = LEVELS[currentLevel]
-    if(edition && !currentChallenge) this.nextChallenge()
+    if(edition && !currentChallenge) this.next()
 
     return (
-      h('div', {className: 'main-container', onClick: () => level && this.nextChallenge(), style: {backgroundColor: color, backgroundImage: 'none'}},
+      h('div', {className: 'main-container', onClick: () => level && this.next(), style: {backgroundColor: color, backgroundImage: 'none'}},
         R.values(LEVELS).map((level, index) => ((index + 1) === currentLevel) && index !== 0 && h('div', { key: index, className: 'next-level', onClick: e => e.stopPropagation() },
           h('h1', {}, 'Next level: ' + level + '!'),
           h(Background, {}))),
