@@ -264,23 +264,28 @@ div.text-field {
 @keyframes fade-out {
     0% {
       opacity: 1;
-      pointer-events: all;
+      top: 0;
     }
 
     95% {
       opacity: 1;
-      pointer-events: all;
+      top: 0;
+    }
+
+    99% {
+      opacity: 0;
+      top: 0;
     }
 
     100% {
+      top: 99999%;
       opacity: 0;
-      pointer-events: none;
     }
 }
 
 .next-level {
   position: fixed;
-  top: 0;
+  top: 99999%;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -290,7 +295,6 @@ div.text-field {
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   animation-name: fade-out;
-  pointer-events: none;
 }
 
 .next-level .fancy-background {
@@ -299,7 +303,7 @@ div.text-field {
   animation-fill-mode: forwards;
   animation-name: fade-out;
   opacity: 0;
-  pointer-events: none;
+  top: 99999%;
 }
 
 .next-level {
