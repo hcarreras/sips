@@ -268,18 +268,17 @@ div.text-field {
     }
 
     95% {
-      pointer-events: all;
       opacity: 1;
+      pointer-events: all;
     }
 
     100% {
-      pointer-events: none;
       opacity: 0;
+      pointer-events: none;
     }
 }
 
 .next-level {
-  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -291,6 +290,16 @@ div.text-field {
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   animation-name: fade-out;
+  pointer-events: none;
+}
+
+.next-level .fancy-background {
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-name: fade-out;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .next-level {
