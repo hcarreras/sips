@@ -267,25 +267,29 @@ div.text-field {
       pointer-events: all;
     }
 
+    95% {
+      pointer-events: all;
+      opacity: 1;
+    }
+
     100% {
-      opacity: 0;
       pointer-events: none;
+      opacity: 0;
     }
 }
 
 .next-level {
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 100;
-  opacity: 1;
-  animation-delay: 4s;
-  animation-duration: 200ms;
+  opacity: 0;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  pointer-events: none;
   animation-name: fade-out;
 }
 
